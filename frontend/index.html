@@ -9,18 +9,9 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="faucet.js"></script>
-   <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
-   <script type="text/javascript">
-    // checks if MetaMask wallet has injected Web3 object
-    function isWeb3Connected() {
-      if(window.ethereum) {
-        document.getElementById("web3-wallet").innerText = "yes";
-      }
-    }
-  </script>
-<script>
-const Web3 = require("web3");const ethEnabled = () => {  if (window.ethereum) {    window.web3 = new Web3(window.ethereum);    window.ethereum.enable();    return true;  }  return false;}
-</script>
+   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+   
+
 	<title>Taste our 🧀 whole 180 Days FREE!! </title>
 </head>
 
@@ -46,14 +37,8 @@ const Web3 = require("web3");const ethEnabled = () => {  if (window.ethereum) { 
 </div>
 <div id="faucet">
 	<script>
-        if (typeof web3 !== 'undefined') {
-            web3 = new Web3(web3.currentProvider);
-        } else {
-            // set the provider you want from Web3.providers
-            web3 = new Web3(new Web3.providers.HttpProvider("https://bsc-dataseed4.defibit.io/"));
-        }
-        web3.eth.defaultAccount = web3.eth.accounts[0];
-    </script>
+const Web3 = require("web3");const ethEnabled = () => {  if (window.ethereum) {    window.web3 = new Web3(window.ethereum);    window.ethereum.enable();    return true;  }  return false;}
+</script>
    
 	<h2>Your BNB Balance:</h2>
 	<div id="balanceETH">0</div>
